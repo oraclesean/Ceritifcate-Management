@@ -4,6 +4,7 @@ Add SSL/TLS certificates to Oracle Wallets
 Generate and add the root and chain certificates to an Oracle Wallet for accessing SSL sites via UTL_HTTP, etc.
 Based on Ruben de Vries's blog post: http://rubendevries.blogspot.com/2017/02/example-utlhttp-and-ssltls-on-12c.html
 ## Use
+```
 Generates certificates needed for Oracle SSL connections using UTL_HTTP and adds them to a wallet.
  Usage: $PROGRAM [-d|--database SID] [-w|--wallet <wallet directory>] [-p|--password <wallet password>]
                  [-u|--url <https site>] (-P <SSL port> ) (-b|--bundle <cs bundle file>)
@@ -25,3 +26,4 @@ Generates certificates needed for Oracle SSL connections using UTL_HTTP and adds
   -v, --verbose         Print certificates before adding.
   -x                    No change mode; display certificates and wallet contents only.
   -h, --help            Print help.
+```
